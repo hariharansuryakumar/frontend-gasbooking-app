@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import CallIcon from "@mui/icons-material/Call";
 
 function Home() {
-  const baseUrl = "http://localhost:3000/api";
+  const baseUrl = "https://backend-gasbooking-app.onrender.com/api";
   const navigate = useNavigate();
 
   // State to store the fetched data and loading state

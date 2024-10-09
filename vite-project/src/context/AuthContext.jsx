@@ -5,7 +5,7 @@ export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const baseUrl = "http://localhost:3000/api";
+  const baseUrl = "https://backend-gasbooking-app.onrender.com/api";
 
   const login = async (credentials) => {
     try {

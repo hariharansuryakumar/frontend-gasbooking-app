@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 
 function Menubar() {
-  const token = localStorage.getItem("token");
+  const token = !!localStorage.getItem("token");
   const { logout } = useContext(AuthContext);
 
   const handleLogout = async () => {
